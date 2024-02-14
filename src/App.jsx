@@ -6,6 +6,8 @@ import { Route, Routes } from "react-router-dom";
 import Pie from "./components/Charts/PieChart";
 import Line from "./components/Charts/Line";
 import FAQ from "./components/FAQ.jsx";
+import Form from './components/Form';
+import TeamTable from './components/TeamTable';
 function App () {
   const darkTheme=UseTheme()
   const toggleColor=UpdateTheme()
@@ -23,6 +25,8 @@ function App () {
         <Route path="/Pie" element={<Pie/>}/>
         <Route path="/Line" element={<Line/>}/>
         <Route path="/FAQ" element={<FAQ ThemeStyles={ThemeStyles}/>}/>
+        <Route path="/Team" element={<TeamTable/>}/>
+        <Route path="/Profile" element={<Form />}/>
       </Routes> 
       </main>
      
