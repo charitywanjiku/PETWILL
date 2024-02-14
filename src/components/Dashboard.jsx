@@ -6,10 +6,17 @@ import PersonAddOutlinedIcon from '@mui/icons-material/PersonAddOutlined';
 import TrafficOutlinedIcon from '@mui/icons-material/TrafficOutlined';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 const Dashboard = () => {
+    // const handleClick =() => {
+
+    // }
   return (
     <div className="p-6">
+        <div>
       <h1 className="text-3xl font-bold mb-4">PETWILL COSTRUCTION LTD</h1>
-      <h2 className="text-2xl font-semibold mb-8">DASHBOARD</h2>
+      <h2 className="text-2xl font-semibold mb-8">WELCOME TO OUR DASHBOARD</h2>
+{/*       
+      <button className='text-2xl font-semibold mb-8' onClick={handleClick}>DOWNLOAD REPORTS</button> */}
+      </div>
 
       {/* Metric Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
