@@ -1,9 +1,17 @@
 
+import MyCalendar from "./components/Calendar";
+import Dashboard from "./components/Dashboard";
+import Item from "./components/Item";
+
 
 
 function App () {
   return (
-    <div> </div>
+    <div>
+      <Dashboard />
+      <MyCalendar />
+      <Item />
+       </div>
 
   
   )
