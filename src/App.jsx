@@ -1,8 +1,13 @@
 import React from 'react'
+import Pages from './components/Pages';
 
 function App () {
   return (
-    <h1 className='text-slate-500 *:text text-4xl'>SIMON</h1>
+    <>
+        <Pages />
+    </>
+
+    
   )
 }
 
