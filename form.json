@@ -34,7 +34,7 @@
       "firstName": "John",
       "lastName": "Doe",
       "email": "johndoe@gmail.com",
-      "contact": "`0799345678",
+      "contact": "0799345678",
       "address1": "New York",
       "address2": "Manhattan",
       "position": "admin",
@@ -44,7 +44,7 @@
       "firstName": "Mary",
       "lastName": "Jacobs",
       "email": "maryjacobs@gmail.com",
-      "contact": "",
+      "contact": "0722156709",
       "address1": "London",
       "address2": "Manchester",
       "position": "Sales",
@@ -97,8 +97,18 @@
       "contact": "0711230579",
       "address1": "Lagos",
       "address2": "Copenhagen",
-      "position": "Driver",
+      "position": "CFO",
       "id": 10
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Jackson",
+      "email": "petejack@gmail.com",
+      "contact": "0754321567",
+      "address1": "San Diego",
+      "address2": "Boston",
+      "position": "COO",
+      "id": 11
     }
   ]
 }
