@@ -1,19 +1,14 @@
-
-import MyCalendar from "./components/Calendar";
-import Dashboard from "./components/Dashboard";
-import Item from "./components/Item";
-import { Routes ,Route } from "react-router-dom";
-import Reports from "./components/Reports";
 import { UpdateTheme,UseTheme } from "./Theme";
 import Bar from "./components/Charts/BarChart";
 import SideBar from "./components/SideBar";
 import TopNav from "./components/TopNav";
-
+import { Routes, Route } from "react-router-dom"
 import Pie from "./components/Charts/PieChart";
 import Line from "./components/Charts/Line";
-import FAQ from "./components/FAQ.jsx";
+import FAQ from "./components/FAQ";
 import Form from './components/Form';
 import TeamTable from './components/TeamTable';
+import ContactInformation from "./components/ContactInformation";
 function App () {
   const darkTheme=UseTheme()
   const toggleColor=UpdateTheme()
@@ -33,10 +28,7 @@ function App () {
         <Route path="/FAQ" element={<FAQ ThemeStyles={ThemeStyles}/>}/>
         <Route path="/Team" element={<TeamTable/>}/>
         <Route path="/Profile" element={<Form />}/>
-        <Route path="/" element={<Dashboard/>}/>
-        <Route path="/Calendar" element={<MyCalendar/>}/>
-        <Route path="/Item" element={<Item/>}/>
-        <Route path="/Reports" element={<Reports/>}/>          
+        <Route path="/Contacts" element={<ContactInformation />}/>
       </Routes> 
       </main>
      
