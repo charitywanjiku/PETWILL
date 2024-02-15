@@ -8,6 +8,7 @@
       "address1": "Nairobi",
       "address2": "Kiambu",
       "position": "Manager",
+      "postalCode": "10290",
       "id": 1
     },
     {
@@ -18,6 +19,7 @@
       "address1": "Nairobi",
       "address2": "Kiambu",
       "position": "CEO",
+      "postalCode": "23789",
       "id": 2
     },
     {
@@ -28,6 +30,7 @@
       "address1": "Nairobi",
       "address2": "Kenya",
       "position": "Owner",
+      "postalCode": "10020",
       "id": 3
     },
     {
@@ -38,6 +41,7 @@
       "address1": "New York",
       "address2": "Manhattan",
       "position": "admin",
+      "postalCode": "10987",
       "id": 4
     },
     {
@@ -48,6 +52,7 @@
       "address1": "London",
       "address2": "Manchester",
       "position": "Sales",
+      "postalCode": "12357",
       "id": 5
     },
     {
@@ -58,6 +63,7 @@
       "address1": "Paris",
       "address2": "Troyes",
       "position": "Product Manager",
+      "postalCode": "13579",
       "id": 6
     },
     {
@@ -68,6 +74,7 @@
       "address1": "Birmingham",
       "address2": "California",
       "position": "Sales Manager",
+      "postalCode": "15790",
       "id": 7
     },
     {
@@ -78,6 +85,7 @@
       "address1": "Milan",
       "address2": "Barcelona",
       "position": "Admin",
+      "postalCode": "12457",
       "id": 8
     },
     {
@@ -88,6 +96,7 @@
       "address1": "Tokyo",
       "address2": "Beijing",
       "position": "Tech Support",
+      "postalCode": "14325",
       "id": 9
     },
     {
@@ -98,6 +107,7 @@
       "address1": "Lagos",
       "address2": "Copenhagen",
       "position": "CFO",
+      "postalCode": "15789",
       "id": 10
     },
     {
@@ -108,6 +118,7 @@
       "address1": "San Diego",
       "address2": "Boston",
       "position": "COO",
+      "postalCode": "10102",
       "id": 11
     }
   ]

@@ -8,6 +8,7 @@ import Line from "./components/Charts/Line";
 import FAQ from "./components/FAQ.jsx";
 import Form from './components/Form';
 import TeamTable from './components/TeamTable';
+import ContactInformation from "./components/ContactInformation.jsx";
 function App () {
   const darkTheme=UseTheme()
   const toggleColor=UpdateTheme()
@@ -27,6 +28,7 @@ function App () {
         <Route path="/FAQ" element={<FAQ ThemeStyles={ThemeStyles}/>}/>
         <Route path="/Team" element={<TeamTable/>}/>
         <Route path="/Profile" element={<Form />}/>
+        <Route path="/Contacts" element={<ContactInformation />} />
       </Routes> 
       </main>
      
