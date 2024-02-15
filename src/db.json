@@ -1,0 +1,58 @@
+{
+    "Feedbacks":[
+        {
+            "id":1,
+         "Name":"Charity Wanjiku",
+         "Feedback":"You have the the construction materials thank you"
+        },
+     {      "id":2,
+            "Name":"Simon Mwangi",
+            "Feedback":"Your materials are very affordable"
+     },
+     {
+        "id":3,
+        "Name":"Victor Mutethia",
+        "Feedback":"I liked the services, thank you for the response"
+ },
+ {
+    "id":4,
+    "Name":"Emmanuel Kimwaki",
+    "Feedback":"Its been five years , still using the tiles  I bought from yo"
+},
+{
+    "id":5,
+    "Name":"Immanuel Cheruiyot",
+    "Feedback":"I am glad I found your Company"
+},
+{
+    "id":6,
+    "Name":"George Okumu",
+    "Feedback":"Very affordable compared to o"
+},
+{
+    "id":7,
+    "Name":"Sang Wyclife",
+    "Feedback":"Always on time, keep up"
+},
+{
+    "id":8,
+    "Name":"Sydney Mukisira",
+    "Feedback":"Your workers are efficient and reliable."
+},
+{
+    "id":9,
+    "Name":"Sarah Wanjiku",
+    "Feedback":"Can you please and houses you list of materials?"
+},
+{
+    "id":10,
+    "Name":"Abaadir",
+    "Feedback":"Which areas you Located?"
+},
+{
+    "id":11,
+    "Name":"Abaadir",
+    "Feedback":"Which areas you Located?"
+}
+    ]
+}
