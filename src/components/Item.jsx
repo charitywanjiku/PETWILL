@@ -21,7 +21,7 @@ const Item = ({ThemeStyles}) => {
   
 //fetch
   useEffect(() => {
-    fetch(`http://localhost:3000/materials`)
+    fetch(`https://api.npoint.io/f812df32a98a7e9b6f61/materials`)
       .then(response => response.json())
       .then(data => {
         setMaterials(data);

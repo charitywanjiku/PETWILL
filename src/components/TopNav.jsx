@@ -18,7 +18,7 @@ return (
     <Box  class="flex justify-between mt-2 p-5" style={ThemeStyles} >
     {/*searchbar*/}
     <Box class="flex">
-      <input className="text-slate-700 bg-slate-500 " placeholder="search"/>
+      <input className="text-slate-700 bg-sky-950 " placeholder="search"/>
       <IconButton style={ThemeStyles} class="text-slate-700">
         <SearchOutlinedIcon />
       </IconButton>

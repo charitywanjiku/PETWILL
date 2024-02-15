@@ -4,7 +4,7 @@ function TeamTable(){
     const [tableItems, setTableItems] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:3000/user")
+        fetch("https://api.npoint.io/f812df32a98a7e9b6f61/user")
         .then(res => res.json())
         .then(tableItems => setTableItems(tableItems))
     },[])
