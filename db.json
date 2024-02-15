@@ -1,0 +1,118 @@
+{
+    "materials": [
+      {
+        "id": 101,
+        "material": "Cement",
+        "price": 899,
+        "quantity": 100,
+        "stock_in": 150,
+        "stock_out": 50
+
+      },
+      {
+        "id": 102,
+        "material": "Paint",
+        "price": 1599,
+        "quantity": 30,
+        "stock_in": 50,
+        "stock_out": 20
+      },
+      {
+        "id": 103,
+        "material": "Sand",
+        "price": 1579,
+        "quantity": 5,
+        "stock_in": 10,
+        "stock_out": 5
+      },
+      {
+        "id": 104,
+        "material": "Metals",
+        "price": 1299,
+        "quantity": 40,
+        "stock_in": 60,
+        "stock_out": 20
+      },
+      {
+        "id": 105,
+        "material": "Nails",
+        "price": 290,
+        "quantity": 500,
+        "stock_in": 800,
+        "stock_out": 300
+      },
+      {
+        "id": 106,
+        "material": "PVC",
+        "price": 599,
+        "quantity": 80,
+        "stock_in": 100,
+        "stock_out": 20
+      },
+      {
+        "id": 107,
+        "material": "Bricks",
+        "price": 590,
+        "quantity": 3000,
+        "stock_in": 4000,
+        "stock_out": 1000
+      },
+      {
+        "id": 108,
+        "material": "Timber",
+        "price": 200,
+        "quantity": 150,
+        "stock_in": 100,
+        "stock_out": 50
+      },
+      {
+        "id": 109,
+        "material": "Stone",
+        "price": 25000,
+        "quantity": 2000,
+        "stock_in": 2500,
+        "stock_out": 500
+      },
+      {
+        "id": 110,
+        "material": "Tile",
+        "price": 0.79,
+        "quantity": 1500,
+        "stock_in": 2100,
+        "stock_out": 600
+      },
+      {
+        "id": 111,
+        "material": "Glass",
+        "price": 299,
+        "quantity": 120,
+        "stock_in": 150,
+        "stock_out": 30
+      },
+      {
+        "id": 112,
+        "material": "Plywood",
+        "price": 489,
+        "quantity": 60,
+        "stock_in": 110,
+        "stock_out": 50
+      },
+      {
+        "id": 113,
+        "material": "PVC",
+        "price": 599,
+        "quantity": 80,
+        "stock_in": 100,
+        "stock_out": 20
+      },
+      {
+        "id": 114,
+        "material": "Concrete Tiles",
+        "price": 449,
+        "quantity": 430,
+        "stock_in": 500,
+        "stock_out": 70
+      }
+    ]
+}
+  
