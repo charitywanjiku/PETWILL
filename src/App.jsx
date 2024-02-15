@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Pie from "./components/Charts/PieChart";
 import Line from "./components/Charts/Line";
 import FAQ from "./components/FAQ.jsx";
+import GeoChart from "./components/Charts/GeoChart.jsx";
 function App () {
   const darkTheme=UseTheme()
   const toggleColor=UpdateTheme()
@@ -19,10 +20,11 @@ function App () {
       <main className="content">
       <TopNav toggleColor={toggleColor} darkTheme={darkTheme}/> 
       <Routes>
-        <Route path="/Bar" element={<Bar/>}/>
+        <Route path="/Bar" element={<Bar ThemeStyles={ThemeStyles}/>}/>
         <Route path="/Pie" element={<Pie/>}/>
         <Route path="/Line" element={<Line/>}/>
         <Route path="/FAQ" element={<FAQ ThemeStyles={ThemeStyles}/>}/>
+        <Route path="/Geography" element={<GeoChart ThemeStyles={ThemeStyles}/>}/>
       </Routes> 
       </main>
      

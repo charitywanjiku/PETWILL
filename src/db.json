@@ -27,7 +27,7 @@
 {
     "id":6,
     "Name":"George Okumu",
-    "Feedback":"Very affordable compared to o"
+    "Feedback":"Very affordable compared to other companies"
 },
 {
     "id":7,
@@ -48,11 +48,7 @@
     "id":10,
     "Name":"Abaadir",
     "Feedback":"Which areas you Located?"
-},
-{
-    "id":11,
-    "Name":"Abaadir",
-    "Feedback":"Which areas you Located?"
 }
+
     ]
 }

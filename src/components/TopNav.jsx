@@ -7,6 +7,7 @@ import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import { Link } from 'react-router-dom';
 
 function TopNav({toggleColor,darkTheme}) {
   const ThemeStyles={
@@ -18,7 +19,7 @@ return (
     <Box  class="flex justify-between mt-2 p-5" style={ThemeStyles} >
     {/*searchbar*/}
     <Box class="flex">
-      <input className="text-slate-700 bg-slate-500 rounded-md" placeholder="search"/>
+      <input className="text-slate-700 relative bg-slate-500 rounded-md" placeholder="search"/>
       <IconButton style={ThemeStyles} class="text-slate-700">
         <SearchOutlinedIcon />
       </IconButton>
@@ -36,7 +37,10 @@ return (
         <SettingsOutlinedIcon />
       </IconButton>
       <IconButton class="text-neutral-800" style={ThemeStyles}>
-        <Person2OutlinedIcon />
+      <Link to="/Profile">
+      <Person2OutlinedIcon />
+      </Link>
+        
       </IconButton>
     </Box>
   </Box>

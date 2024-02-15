@@ -16,7 +16,8 @@
     height: 100vh;
 }
 .maxHeight{
-height:8rem
+height:8rem;
+
 }
 .minHeight{
 height:min-content
@@ -24,11 +25,13 @@ height:min-content
 .Visible{
     display: block;
     margin-top: 2rem;
+    color:white
 }
 .Unvisible{
     display:none
 }
 .accordition{
-    transition: 0.5s;
+    transition-delay: 0.5s;
+    cursor:pointer
 
 }

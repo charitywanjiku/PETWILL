@@ -113,9 +113,9 @@ function SideBar() {
      <Box>
         <Item
         icon={<ReceiptIcon/>}
-        title="Invoices"
+        title="Materials"
         onClick={()=>setSelected(!isSelected)}
-        to="/Invoice"
+        to="/Item"
       />
      </Box>
     
@@ -169,14 +169,7 @@ function SideBar() {
         to="/Line"
       />
      </Box>
-     <Box>
-        <Item
-        icon={<TerrainOutlinedIcon/>}
-        title="Geography Chart"
-        onClick={()=>setSelected(!isSelected)}
-        to="/Geography"
-      />
-     </Box>
+   
      </Box>
 </Box>
 
