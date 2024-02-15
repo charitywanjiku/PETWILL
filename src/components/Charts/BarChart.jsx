@@ -4,8 +4,14 @@ import { Box } from "@mui/material"
 function Bar({ThemeStyles}) {
   return (
     <>
+<<<<<<< HEAD
     <Box class="h-3/4 w-full p-3 text-xl" style={ThemeStyles}>
     <h1 className='text-slate-300 font-semibold'>Bar Chart to display the rate of supply of products</h1>
+=======
+    <Box class="h-3/4 w-full p-7">
+    <h1 className='text-slate-300  font-bold text-2xl'>Bar Chart</h1>
+    <h3 className="text-emerald-500">To show the rate of supply in Different Counties</h3>
+>>>>>>> branch2
     <ResponsiveBar
         data={data}
         keys={[

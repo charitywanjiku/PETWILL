@@ -17,12 +17,10 @@ import SsidChartOutlinedIcon from '@mui/icons-material/SsidChartOutlined';
 import TerrainOutlinedIcon from '@mui/icons-material/TerrainOutlined';
 import ContactPage from "@mui/icons-material/ContactPage";
 
-const Item=({title,to,icon,isSelected,setSelected})=>{
+const Item=({title,to,icon})=>{ //create a function for holding the sidevar details
     return(
     <Link to={to}>  
     <MenuItem
-    active={isSelected===title}
-    onClick={()=>setSelected(title)}
     style={{color:"rgb(200,200,200)"}}
     icon={icon}
     >
@@ -38,17 +36,17 @@ const Item=({title,to,icon,isSelected,setSelected})=>{
   }
 
 
-function SideBar() {
-    const [isSelected, setSelected]=useState("Dashboard")
+function SideBar({ThemeStyles}) {
+    
     const [isCollapsed, setCollapsed]=useState(false)
   return (
-    <div className="flex-col bg-blue-950 h-screen w-fit">
+    <div className="flex-col w-fit h-screen border-x-4 border-neutral-700 bg-sky-950 border-solid ">
     
     
-    <Box class="flex-col bg-blue-950">
+    <Box class="flex-col" style={ThemeStyles}>
    
-<Sidebar collapsed={isCollapsed} class="bg-sky-950 text-slate-200">
-<Menu className="bg-sky-950">
+<Sidebar collapsed={isCollapsed} style={ThemeStyles}>
+<Menu  class="bg-sky-950">
 <Box>
 <MenuItem
         class="text-slate-200 justify-between"
@@ -58,7 +56,7 @@ function SideBar() {
         style={{margin:"10px 0", cursor:"pointer"}}>
         {!isCollapsed&&(
              <Box class='flex justify-between p-3'>
-         <h1>ADMIN</h1>
+         <h1 className="text-2xl font-bold">ADMIN</h1>
             <IconButton class="text-slate-200" onClick={()=>setCollapsed(!isCollapsed)}>
                 <MenuIcon/>
             </IconButton>
@@ -71,10 +69,10 @@ function SideBar() {
     </Box>
     {!isCollapsed &&(
         <Box>
-         <Box class="mt-3">
+         <Box class="mt-5">
     <img id="admin" className="mx-auto" src="https://avatars.githubusercontent.com/u/152304981?v=4" width="100px" height="100px"/>
 </Box>   
- <Box class="mt-3">
+ <Box class="mt-4">
    <h1 className="text-2xl text-center text-white font-bold">Charity Wanjiku</h1>
    <h5 className="text-center text-green-600">SCRAM MASTER</h5>
 </Box>  
@@ -83,7 +81,7 @@ function SideBar() {
     )}
   
 </Menu>
-<Menu className="bg-sky-950">
+<Menu class="bg-sky-950">
 <Box paddingLeft={!isCollapsed? undefined: "10%"}>
     
         <Item
@@ -93,12 +91,12 @@ function SideBar() {
          to="/"
       />
     
-     <h1 className="text-slate-500">Data</h1>
+     <h1>Data</h1>
       <Box>
       <Item
         icon={<GroupIcon/>}
         title="Manage Team"
-        onClick={()=>setSelected(!isSelected)}
+        
         to="/Team"
       />
 </Box>
@@ -106,7 +104,6 @@ function SideBar() {
 <Item
         icon={<ContactPage/>}
         title="Contact Information"
-        onClick={()=>setSelected(!isSelected)}
         to="/Contacts"
       />
       </Box>
@@ -114,7 +111,6 @@ function SideBar() {
         <Item
         icon={<ReceiptIcon/>}
         title="Materials"
-        onClick={()=>setSelected(!isSelected)}
         to="/Item"
       />
      </Box>
@@ -125,7 +121,6 @@ function SideBar() {
         <Item
         icon={<AccountBoxIcon/>}
         title="Profile Form"
-        onClick={()=>setSelected(!isSelected)}
         to="/Profile"
       />
      </Box>
@@ -133,7 +128,6 @@ function SideBar() {
         <Item
         icon={<CalendarMonthOutlinedIcon/>}
         title="Calendar"
-        onClick={()=>setSelected(!isSelected)}
         to="/Calendar"
       />
      </Box>
@@ -141,7 +135,6 @@ function SideBar() {
         <Item
         icon={<QuizOutlinedIcon/>}
         title="FAQ"
-        onClick={()=>setSelected(!isSelected)}
         to="/FAQ"
       />
      </Box>
@@ -150,14 +143,12 @@ function SideBar() {
         <Item
         icon={<BarChartOutlinedIcon/>}
         title="Bar Chart"
-        onClick={()=>setSelected(!isSelected)}
         to="/Bar"
       />
        <Box>
         <Item
         icon={<PieChartOutlineOutlinedIcon/>}
         title="Pie Chart"
-        onClick={()=>setSelected(!isSelected)}
         to="/Pie"
       />
      </Box>
@@ -165,11 +156,9 @@ function SideBar() {
         <Item
         icon={<SsidChartOutlinedIcon/>}
         title="Line Chart"
-        onClick={()=>setSelected(!isSelected)}
         to="/Line"
       />
      </Box>
-   
      </Box>
 </Box>
 

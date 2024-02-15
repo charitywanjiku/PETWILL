@@ -5,7 +5,8 @@ import { Box } from '@mui/material'
 function Pie() {
   return (
     <Box class="h-3/4 w-full p-7">
-
+   <h1 className='text-slate-300  font-bold text-2xl'>Pie Chart</h1>
+    <h3 className="text-emerald-500">To show the Profits and Losses</h3>
 <ResponsivePie
         data={data}
         margin={{ top: 40, right: 80, bottom: 80, left: 80 }}

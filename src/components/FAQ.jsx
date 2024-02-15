@@ -22,20 +22,21 @@ fetch('http://localhost:3000/Feedbacks')
     },[])
     console.log(feedbacks)
   return (
-    <div className='h-screen' style={ThemeStyles}>
-    <h1 className='text-xl text-green-600'>Feedbacks and FAQs</h1>
+    <div>
+    <h1 className='text-2xl m-3'>Feedbacks and FAQs</h1>
     <div>
        {
 feedbacks.map((feeds,index)=>{
     return(
-        <div onClick={()=>toggleCollapsed(index)} className='accordition flex rounded-md shadow-xl justify-between ml-10 mt-2 pl-3 pr-3 bg-zinc-900 w-3/4  border-stone-600 border-y-2' key={index}>
+        <div className='accordition flex rounded-sm shadow-xl justify-between p-3 bg-zinc-900 w-3/4 m-2' key={index}>
+
         <div className={feeds.isCollapsed?"maxHeight":"minHeight"}>
         <h3 className="text-lg text-emerald-300 font-semibold">{feeds.Name}</h3>
         <h5  className={feeds.isCollapsed?"Visible":"Unvisible"}>{feeds.Feedback}</h5></div>
       
         <div>
   <button onClick={()=>toggleCollapsed(index)}>
-<IconButton style={ThemeStyles}>
+<IconButton class='text-slate-300'>
    {feeds.isCollapsed?<ExpandLessIcon/>:<ExpandMoreIcon/>}
 </IconButton>
        
