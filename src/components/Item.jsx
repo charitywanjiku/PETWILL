@@ -13,12 +13,13 @@ const Item = ({ThemeStyles}) => {
     avatar: '',
     
   });
+  //search functionality
   const FilteredItems=materials.filter(item=>{
-    const ItemFilter=input===""||item.material.toUpperCase().startsWith(input.toUpperCase())
+    const ItemFilter=input===""||item.material.toUpperCase().startsWith(input.toUpperCase()) //filter by case insenstive
     return ItemFilter
   })
   
-
+//fetch
   useEffect(() => {
     fetch(`http://localhost:3000/materials`)
       .then(response => response.json())
@@ -41,7 +42,7 @@ const Item = ({ThemeStyles}) => {
   
 
   
-
+//submit functionality
   const handleSubmit = (e) => {
     e.preventDefault();
     const newItemWithAvatar = { ...newItem };
