@@ -4,7 +4,7 @@ import { Box } from "@mui/material"
 function Bar({ThemeStyles}) {
   return (
     <>
-    <Box class="h-screen w-full p-3 text-xl" style={ThemeStyles}>
+    <Box class="h-3/4 w-full p-3 text-xl" style={ThemeStyles}>
     <h1 className='text-slate-300 font-semibold'>Bar Chart to display the rate of supply of products</h1>
     <ResponsiveBar
         data={data}
