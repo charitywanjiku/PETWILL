@@ -85,7 +85,7 @@ function SideBar({ThemeStyles}) {
          to="/"
       />
     
-     <h1>Data</h1>
+     <h1 className="text-slate-500">Data</h1>
       <Box>
       <Item
         icon={<GroupIcon/>}
