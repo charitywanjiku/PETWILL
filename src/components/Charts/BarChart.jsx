@@ -1,11 +1,12 @@
 import { ResponsiveBar } from "@nivo/bar"
 import { SalesBar as data } from "../Data/MockData"
 import { Box } from "@mui/material"
-function Bar() {
+function Bar({ThemeStyles}) {
   return (
     <>
     <Box class="h-3/4 w-full p-7">
-    <h1 className='text-slate-300'>Bar Chart</h1>
+    <h1 className='text-slate-300  font-bold text-2xl'>Bar Chart</h1>
+    <h3 className="text-emerald-500">To show the rate of supply in Different Counties</h3>
     <ResponsiveBar
         data={data}
         keys={[
@@ -26,7 +27,7 @@ function Bar() {
 
         ]}
         indexBy="County"
-        margin={{ top: 20, right: 130, bottom: 50, left: 60 }}
+        margin={{ top: 20, right: 130, bottom: 60, left: 60 }}
         padding={0.3}
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}

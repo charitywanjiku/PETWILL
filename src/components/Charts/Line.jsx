@@ -6,6 +6,8 @@ function Line() {
   return (
     <>
     <Box class="h-3/4 w-full p-7">
+    <h1 className='text-slate-300  font-bold text-2xl'>Line Chart</h1>
+    <h3 className="text-emerald-500">To show the rate of supply in Different Counties</h3>
     <ResponsiveLine
         data={data}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
