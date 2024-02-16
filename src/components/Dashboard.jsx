@@ -31,7 +31,7 @@ const Dashboard = ({ThemeStyles}) => {
           <div className="w-4 h-8 text-blue-500 mr-2"><DonutLargeIcon /></div>
           <MarkEmailReadOutlinedIcon className="w-8 h-8 text-blue-500 mr-4" />
           <div>
-            <h1 className="text-2xl font-semibold">12,361</h1>
+            <h1 className="text-2xl text-slate-300 font-semibold">12,361</h1>
             <h2 className='text-blue-500'>Email +14% Sent</h2>
           </div>
         </Box>
@@ -41,7 +41,7 @@ const Dashboard = ({ThemeStyles}) => {
           <div className="w-8 h-8 text-green-500 mr-4"><DonutLargeIcon /></div>
           <PointOfSaleOutlinedIcon className="w-8 h-8 text-green-500 mr-4" />
           <div>
-            <h1 className="text-2xl font-semibold">431,22</h1>
+            <h1 className="text-2xl font-semibold text-slate-300">431,22</h1>
             <h2 className='text-green-500'>Sales Obtained +21%</h2>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Dashboard = ({ThemeStyles}) => {
           <div className="w-8 h-8 text-yellow-500 mr-4"><DonutLargeIcon /></div>
           <DownloadOutlinedIcon className="w-8 h-8 text-yellow-500 mr-4" />
           <div>
-            <h1 className="text-2xl font-semibold">32,441</h1>
+            <h1 className="text-2xl font-semibold text-slate-300">32,441</h1>
             <h2 className="text-yellow-500">New Reports +5%</h2>
           </div>
         </div>
@@ -61,7 +61,7 @@ const Dashboard = ({ThemeStyles}) => {
           <div className="w-8 h-8 text-purple-500 mr-4"><DonutLargeIcon /></div>
           <PersonAddOutlinedIcon className="w-8 h-8 text-purple-500 mr-4" />
           <div>
-            <h1 className="text-2xl font-semibold">30,440</h1>
+            <h1 className="text-2xl font-semibold text-slate-300">30,440</h1>
             <h2 className="text-purple-500">New Clients +10%</h2>
           </div>
         </div>
