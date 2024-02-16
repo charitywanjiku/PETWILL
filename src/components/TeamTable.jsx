@@ -35,7 +35,7 @@ function TeamTable(){
               <td className="py-2  border-gray-500 px-4 border-r">{tableItem.contact}</td>
               <td className="py-2  border-gray-500 px-4 border-r">{tableItem.address1}</td>
               <td className="py-2  border-gray-500 px-4 border-r">{tableItem.address2}</td>
-              <Button class="py-2 f bg-emerald-800 w-full pr-15 pt-pl-15 1 pb-1">{tableItem.position}</Button>
+              <Button class="py-2 f bg-emerald-800 text-slate-300 w-full pr-15 pt-pl-15 1 pb-1">{tableItem.position}</Button>
             </tr>
           ))}
         </tbody>

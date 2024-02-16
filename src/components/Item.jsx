@@ -65,11 +65,11 @@ const Item = ({ThemeStyles}) => {
         <thead>
           <tr className="bg-sky-950 border-gray-500">
            
-            <th className="py-2 px-4 border border-gray-500">Material</th>
-            <th className="py-2 px-4 border border-gray-500">Price</th>
-            <th className="py-2 px-4 border border-gray-500">Stock In</th>
-            <th className="py-2 px-4 border border-gray-500">Quantity</th>
-            <th className="py-2 px-4 border border-gray-500">Stock Out</th>
+            <th className="py-2 text-slate-200 px-4 border border-gray-500">Material</th>
+            <th className="py-2 text-slate-200 px-4 border border-gray-500">Price</th>
+            <th className="py-2 text-slate-200 px-4 border border-gray-500">Stock In</th>
+            <th className="py-2 text-slate-200 px-4 border border-gray-500">Quantity</th>
+            <th className="py-2 text-slate-200 px-4 border border-gray-500">Stock Out</th>
           </tr>
         </thead>
         <tbody>

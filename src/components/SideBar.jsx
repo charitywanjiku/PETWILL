@@ -28,12 +28,8 @@ const Item=({title,to,icon})=>{ //create a function for holding the sidevar deta
       
     </MenuItem>
     </Link>
-     
-   
-    
-  )
-   
-  }
+     )
+   }
 
 
 function SideBar({ThemeStyles}) {
@@ -41,8 +37,6 @@ function SideBar({ThemeStyles}) {
     const [isCollapsed, setCollapsed]=useState(false)
   return (
     <div className="flex-col w-fit h-screen border-x-4 border-neutral-700 bg-sky-950 border-solid ">
-    
-    
     <Box class="flex-col" style={ThemeStyles}>
    
 <Sidebar collapsed={isCollapsed} style={ThemeStyles}>
@@ -50,11 +44,11 @@ function SideBar({ThemeStyles}) {
 <Box>
 <MenuItem
         class="text-slate-200 justify-between"
-        onClick={()=>setCollapsed(!isCollapsed)}
-        icon={isCollapsed?<MenuIcon/>:undefined }
-    
-        style={{margin:"10px 0", cursor:"pointer"}}>
-        {!isCollapsed&&(
+        onClick={()=>setCollapsed(!isCollapsed)}   //set the collapse functionality when the menu ico is clicked
+        icon={isCollapsed?<MenuIcon/>:undefined } //when collapsed the menu ico is visible
+       style={{margin:"10px 0", cursor:"pointer"}}>
+
+        {!isCollapsed&&( //when in a state of collapsed
              <Box class='flex justify-between p-3'>
          <h1 className="text-2xl font-bold">ADMIN</h1>
             <IconButton class="text-slate-200" onClick={()=>setCollapsed(!isCollapsed)}>
@@ -96,7 +90,6 @@ function SideBar({ThemeStyles}) {
       <Item
         icon={<GroupIcon/>}
         title="Manage Team"
-        
         to="/Team"
       />
 </Box>
