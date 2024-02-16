@@ -9,7 +9,8 @@ function Form({ThemeStyles}){
     contactNumber: "",
     address1: "",
     address2: "",
-    position: ""
+    position: "",
+    postalCode: ""
 })
 
 function handleChange(event){
@@ -35,7 +36,8 @@ function handleSubmit(event){
         contact: contactNumber.value,
         address1: address1.value,
         address2: address2.value,
-        position: position.value
+        position: position.value,
+        postalCode: postalCode.value
     }
     console.log(profile)
 
@@ -108,6 +110,13 @@ function handleSubmit(event){
           <label htmlFor="contact" className="block text-sm font-medium leading-6">Contact Number  <span className="text-slate-400">(required)</span></label>
           <div className="mt-2">
             <input type="tel" name="contactNumber" id="contactNumber" value={formData.contactNumber} required onChange={handleChange} className="block w-full bg-slate-200 rounded-md border-0 py-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400  sm:text-sm sm:leading-6"/>
+          </div>
+        </div>
+
+        <div class="sm:col-span-2">
+          <label htmlFor="postal-code" className="block text-sm font-medium leading-6 text-gray-900">ZIP / Postal code</label>
+          <div className="mt-2">
+            <input type="text" name="postalCode" id="postalCode" value={formData.postalCode} className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
           </div>
         </div>
       </div>
