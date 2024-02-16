@@ -9,6 +9,9 @@ import FAQ from "./components/FAQ";
 import Form from './components/Form';
 import TeamTable from './components/TeamTable';
 import ContactInformation from "./components/ContactInformation";
+import Dashboard from "./components/Dashboard";
+import MyCalendar from "./components/Calendar";
+import Item from "./components/Item";
 function App () {
   const darkTheme=UseTheme() //usetheme hook
   const toggleColor=UpdateTheme() //button hook
@@ -36,7 +39,7 @@ function App () {
         <Route path="/Calendar" element={<MyCalendar/>}/>
         <Route path="/Item" element={<Item ThemeStyles={ThemeStyles}/>}/>
         <Route path="/Profile" element={<Form />}/>
-        <Route path="/Contacts" element={<ContactInformation />}/>
+        <Route path="/Contacts" element={<ContactInformation ThemeStyles={ThemeStyles} />}/>
       </Routes> 
       </main>
      

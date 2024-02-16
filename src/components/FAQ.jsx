@@ -16,7 +16,7 @@ function FAQ({ThemeStyles}) {
     }
 console.log(feedbacks)
     useEffect(()=>{
-fetch('https://api.npoint.io/f812df32a98a7e9b6f61/Feedbacks')
+fetch('https://api.npoint.io/50119392bff49c1a1767/Feedbacks') //fetch the feedbacks
 .then(res=>res.json())
 .then(data=>setFeedbacks(data))
     },[])
